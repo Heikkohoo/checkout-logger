@@ -17,7 +17,6 @@ describe('Logger', () => {
             logger.error('test', 'message', logger.LogGroup.Technical, 'user');
         });
         describe('circular reference works', () => {
-            // eslint-disable-next-line functional/prefer-readonly-type
             const circular = {
                 foo: 'bar',
                 itself: {}

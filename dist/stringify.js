@@ -6,9 +6,7 @@ exports.stringify = void 0;
  *
  * @param object Object to stringify
  */
-// eslint-disable-next-line functional/prefer-immutable-types
 const stringify = (object) => {
-    // eslint-disable-next-line functional/prefer-readonly-type, functional/prefer-immutable-types
     const cache = [];
     return JSON.stringify(object, (_key, value) => {
         if (typeof value === 'object' && value !== null) {
