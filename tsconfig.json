@@ -19,10 +19,11 @@
   "include": [
     "src/**/*.ts",
     "test/**/*.ts",
-    "config/**/*.ts"
+    "config/**/*.ts",
+    "./eslint.config.mjs"
   ],
   "exclude": [
     "node_modules",
-    "src/shared-types/components"
+    ".git"
   ]
 }

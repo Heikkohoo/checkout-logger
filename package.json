@@ -11,20 +11,20 @@
     "test": "mocha --require ts-node/register src/*.spec.ts src/**/*.spec.ts"
   },
   "dependencies": {
-    "uuid": "9.0.1"
+    "uuid": "10.0.0"
   },
   "devDependencies": {
-    "@types/chai": "4.3.16",
-    "@types/mocha": "10.0.6",
-    "@types/node": "20.12.12",
-    "@types/uuid": "9.0.8",
-    "chai": "4.4.1",
-    "mocha": "10.4.0",
+    "@eslint/js": "^9.12.0",
+    "@types/chai": "5.0.0",
+    "@types/mocha": "10.0.9",
+    "@types/node": "22.7.6",
+    "@types/uuid": "10.0.0",
+    "chai": "4.5.0",
+    "globals": "^15.11.0",
+    "mocha": "10.7.3",
     "ts-node": "10.9.2",
-    "typescript": "5.4.5",
-    "@typescript-eslint/eslint-plugin": "^7.11.0",
-    "@typescript-eslint/parser": "^7.11.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-functional": "^6.5.1"
+    "typescript": "5.5.4",
+    "typescript-eslint": "^8.9.0",
+    "eslint-plugin-functional": "^7.0.2"
   }
 }

@@ -18,7 +18,6 @@ export enum LogLevel {
     Error   = 'error'
 }
 
-// eslint-disable-next-line functional/type-declaration-immutability
 interface LogEntry {
     readonly timestamp?: Date;
     readonly level: LogLevel;
@@ -185,7 +184,7 @@ export class LogSpan {
      * Manipulates the LogEntry into a well formatted log row.
      * @param entry Log entry object.
      */
-    // eslint-disable-next-line functional/no-return-void, functional/prefer-immutable-types
+    // eslint-disable-next-line functional/no-return-void
     private output(entry: LogEntry): void {
         if (!(this.logLevels as any)[entry.level] || process.env.SUPPRESS_LOG_OUTPUT === 'true') {
             // Log level configured above this message so ignore it.
@@ -228,7 +227,6 @@ export const debug: LogFunction = (
     // eslint-disable-next-line functional/no-return-void
     ): void => {
 
-    // eslint-disable-next-line functional/prefer-immutable-types
     const span: LogSpan = new LogSpan();
     span.debug(type, message, group, user, meta);
 };
@@ -251,7 +249,6 @@ export const warn: LogFunction = (
     // eslint-disable-next-line functional/no-return-void
     ): void => {
 
-    // eslint-disable-next-line functional/prefer-immutable-types
     const span: LogSpan = new LogSpan();
     span.warn(type, message, group, user, meta);
 };
@@ -274,7 +271,6 @@ export const info: LogFunction = (
     // eslint-disable-next-line functional/no-return-void
     ): void => {
 
-    // eslint-disable-next-line functional/prefer-immutable-types
     const span: LogSpan = new LogSpan();
     span.info(type, message, group, user, meta);
 };
@@ -297,7 +293,6 @@ export const error: LogFunction = (
     // eslint-disable-next-line functional/no-return-void
     ): void => {
 
-    // eslint-disable-next-line functional/prefer-immutable-types
     const span: LogSpan = new LogSpan();
     span.error(type, message, group, user, meta);
 };
