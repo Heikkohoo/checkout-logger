@@ -1,7 +1,7 @@
 /* eslint-disable functional/immutable-data */
 /* eslint-disable functional/no-return-void */
-import { LogSpan } from './checkout-logger';
-import * as logger from './checkout-logger';
+import { LogSpan } from './5w-logger';
+import * as logger from './5w-logger';
 
 describe('Logger', () => {
     // TODO: add mockups
