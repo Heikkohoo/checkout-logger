@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const logger = require("./checkout-logger");
+const logger = require("./5w-logger");
 describe('Logger', () => {
     // TODO: add mockups
     it('without span', () => {
@@ -67,4 +67,4 @@ describe('Logger', () => {
         });
     });
 });
-//# sourceMappingURL=checkout-logger.spec.js.map
+//# sourceMappingURL=5w-logger.spec.js.map
